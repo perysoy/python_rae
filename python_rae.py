@@ -1,8 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
 
-# import json
-
 from verbos.conjugacion import _conjugacion
 
 def _comprobar_si_verbo(sopa):
@@ -39,7 +37,6 @@ def _comprobar_si_existe(palabra):
             print(f'La palabra no existe tal vez queria decir: {relacionadas[0].text}')
             return False
         elif resultados.text.startswith(aviso_no_existe):
-            # print('Palabra no existe ni tampoco relacionadas')  
             print(f'No existe la palabra {palabra} en el diccionario')
             return False
         elif resultados.text.startswith(aviso_relacionada2) == True:   # cuando por ejemplo envias coletas esto muestra la web: Entradas que contienen la forma «coletas»:
@@ -69,7 +66,6 @@ def conjugar(verbo):
         if _comprobar_si_existe(verbo) is not False:
             if _comprobar_si_verbo(sopa):
                 lista = _conjugacion(sopa)
-                # print(*lista, sep='\n')
                 return lista
             else:
                 return False
