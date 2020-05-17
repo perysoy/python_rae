@@ -5,6 +5,6 @@ python_rae es un módulo con el cuál puedes acceder al diccionario público de 
  # Uso:
 ```python
 from python_rae import busqueda_rae, conjugar
-palabra = python-rae.busqueda_rae('alfombra')
+palabra = busqueda_rae('alfombra')
 verbo = conjugar('aprender')
 ```
