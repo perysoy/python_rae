@@ -1,9 +1,7 @@
 from verbos.diccionarios import indicativo, subjuntivo, imperativo
 
 def _conjugacion(sopa):
-    ''' sopa tiene que ser resultados porque esta despues de article
-        <div id="conjugacion">
-        Requiere que comprobar_si_verbo devuelva True
+    ''' Requiere que comprobar_si_verbo devuelva True
         retorna una lista con 3 diccionarios: [indicativo, subjuntivo, imperativo]
 
     '''

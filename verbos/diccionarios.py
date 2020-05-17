@@ -1,15 +1,3 @@
-# dic_personas = { 'Singular' :   {
-#                                      'Primera' : { 'yo': ''},
-#                                      'Segunda' : {'tú/vos': '', 
-#                                                   'usted': ''},
-#                                      'Tercera' : {'él, ella': ''}     
-#                                     },                                
-#                      'Plural'   :   {
-#                                      'Primera' :  {'nosotros, nosotras': '' },
-#                                      'Segunda' :  {'vosotros, vosotras': '', 'ustedes': ''},
-#                                      'Tercera' :  {'ellos, ellas': '' }
-#                                     }   
-#                     }    
 indicativo = {  'Presente'      : {   
                                     'Singular' :   {
                                         'Primera' : { 'yo': ''},

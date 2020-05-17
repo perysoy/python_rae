@@ -4,10 +4,7 @@ from bs4 import BeautifulSoup
 from verbos.conjugacion import _conjugacion
 
 def _comprobar_si_verbo(sopa):
-    ''' Comprueba si la palabra de la rae es un verbo.
-        Para ello busca class='e2'. Ejemplo:
-        <a class="e2" title="Conjugar el verbo soñar" href="#conjugaciongeNDUMU"></a>
-        sopa eventualmente es el 'tag' <article>
+    ''' Comprueba si la palabra de la rae es un verbo (Retorna True sino False).
     '''
     verbo = sopa.find('a', attrs={'class': 'e2'})
     if verbo is not None:
